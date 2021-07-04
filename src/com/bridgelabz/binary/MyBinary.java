@@ -26,6 +26,18 @@ public class MyBinary<K extends Comparable<K>>
 		}
 		return current;
 	}
+	public BinaryNode<K> search(BinaryNode<K> current ,K key)
+	{
+		if(current==null || root.key == key)
+		{
+			return root;
+		}
+		if(root.key.compareTo(key)<0)
+		{
+			return search(current.right, key);
+		}
+		return search(current.left, key);
+	}
 	
 	public int getSize() 
 	{
@@ -65,6 +77,13 @@ public class MyBinary<K extends Comparable<K>>
 		int size = binaryTree.getSize();
 		System.out.println(binaryTree);
 		System.out.println("size of binary tree:"+size);
+		
+		if(binaryTree.search(root, 22))
+		{
+			System.out.println("yes");
+		}
+		else
+			System.out.println("no");
 	}
 
 }
