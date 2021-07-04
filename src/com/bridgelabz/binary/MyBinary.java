@@ -27,7 +27,8 @@ public class MyBinary<K extends Comparable<K>>
 		return current;
 	}
 	@Override
-	public String toString() {
+	public String toString() 
+	{
 		return "MyBinary [root=" + root + "]";
 	}
 
@@ -37,7 +38,8 @@ public class MyBinary<K extends Comparable<K>>
 		// TODO Auto-generated constructor stub
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args)
+	{
 		MyBinary<Integer> binaryTree = new MyBinary<>();
 		binaryTree.add(56);
 		binaryTree.add(30);

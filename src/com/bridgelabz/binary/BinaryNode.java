@@ -26,6 +26,4 @@ public class BinaryNode<T extends Comparable<T>>
 	{
 		return "BinaryNode [data=" + key + ", left=" + left + ", right=" + right + "]";
 	}
-
-
 }
